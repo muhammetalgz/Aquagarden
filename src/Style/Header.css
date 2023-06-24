@@ -1,0 +1,68 @@
+.header{
+    background: rgb(48, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;  
+}
+.header a{
+    text-decoration: none;
+}
+
+.header-title{
+    margin: 0;
+}
+.header-logo span{
+    color: aqua;
+    margin-right: -10px;
+}
+.header-logo h1{
+    margin: 0;
+    color: #58c56a;
+    font-weight: 400
+}
+.header-link{
+    margin: 0;
+    list-style: none;
+}
+.header-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.header ul a:hover{
+    box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px);
+    color: rgb(44, 177, 99)
+}
+.header .button {
+  display: inline-block;
+  background: #3b3b3b;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  text-decoration: none;
+}
+.mobile-app-menu{
+    display: none;
+}
+.mobile-app-menu button{
+    background: none;
+    border: none;
+}
+.mobile-app-menu svg{
+    font-size: 25px;
+    color: white;
+}
+#mobile-app{
+    display: none;
+}

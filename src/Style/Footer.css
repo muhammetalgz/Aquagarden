@@ -1,0 +1,41 @@
+footer{
+    padding: 20px;
+    background: gray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-media h4{
+    color: white;
+    margin-bottom: 20px;
+}
+.social-media li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.social-media a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    transition: .3s;
+}
+.social-media a:hover{
+    opacity: 0.7;
+    color: white;
+    transition: .3s;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}

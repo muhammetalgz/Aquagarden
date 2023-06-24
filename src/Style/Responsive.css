@@ -1,0 +1,405 @@
+/* Mobile App CSS */
+
+@media screen and (max-width: 767px) {
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+        justify-content: space-between;
+    }
+    .header ul {
+        padding: 0;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40;
+    }
+
+    .header-logo h1 span{
+        margin-right: -3;
+    }
+
+    .mobile-app-menu {
+        display: block;
+        z-index: 9;
+    }
+
+    .container {
+        --bs-gutter-x: 0 !important;
+        margin-right: 0;
+        margin-left: 0;
+        margin: 0 !important;
+        max-width: 768px !important;
+    }
+
+    .header-video video {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-text {
+        gap: 10px;
+        width: 70%;
+    }
+
+    .header-text span {
+        border: none;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .header-text a {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .header-text button {
+        letter-spacing: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .swiper {
+        width: 95%;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .social-media {
+        gap: 0;
+    }
+
+    footer .social-media li a {
+        font-size: 16px;
+    }
+
+    footer .social-media h4 {
+        font-size: 18px;
+    }
+
+    .contact-form {
+        width: 300px;
+    }
+
+    .contact-form label {
+        display: none;
+    }
+
+    .contact-form input {
+        font-size: 13px;
+    }
+
+    .contact-form textarea {
+        font-size: 13px;
+    }
+
+    .contact-form button {
+        margin: 0;
+    }
+
+    .contact p {
+        color: white;
+        font-size: 14px;
+        width: 50%;
+        text-align: center;
+    }
+    #mobile-app{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        top: 0;
+        left: 0;
+        display: block;
+        opacity: 0.9;
+        z-index: 5;
+        transform: translateX(100%);
+    }
+   .mobile-app{
+    transform: translate(0) !important;
+    transition: .3s;
+   }
+    #mobile-app a{
+        color: white;
+        padding: 0;
+        font-size: 18px;
+        margin: 0;
+    }
+    .mobile-app-menu button{
+        padding: 0;
+    }
+    .mobile-menu-app{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .added-price{
+        font-size: 16px;
+    }
+    .discount-price{
+        font-size: 16px;
+    }
+    .product-title{
+        font-size: 18px;
+    }
+    .carousel-root{
+        width: 100%;
+        margin: 0;
+        margin-bottom: -7px;
+    }
+    .slide img{
+        height: 410px;
+    }
+    .control-dots{
+        display: none !important;
+    }
+    .control-arrow control-prev{
+        display: none !important;
+    }
+    .control-arrow{
+        display: none !important;
+    }
+    .thumbs-wrapper{
+        display: none !important;
+    }
+}
+
+/* Tablet App CSS */
+
+/* @media screen and (min-width: 768px) and (max-width: 991px) {
+    .header {
+        background: rgb(170, 83, 83);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header-logo {
+        margin-bottom: 9px;
+    }
+
+    .header ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40;
+    }
+
+    .container {
+        --bs-gutter-x: 0 !important;
+        margin-right: 0;
+        margin-left: 0;
+        margin: 0 !important;
+        max-width: 768px !important;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .header-video video {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-text {
+        gap: 10px;
+        width: 70%;
+    }
+
+    .header-text span {
+        border: none;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .header-text a {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .header-text button {
+        letter-spacing: 0;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .discount {
+        width: 200px !important;
+        height: 340px !important;
+        margin-right: 15px !important;
+    }
+
+    .added {
+        width: 200px !important;
+        height: 340px !important;
+        margin-right: 15px !important;
+
+    }
+} */
+
+/* Laptop App CSS */
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header-logo {
+        margin-bottom: 9px;
+    }
+
+    .header ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40;
+    }
+
+    .container {
+        padding: 10px;
+        --bs-gutter-x: 0 !important;
+        margin-right: 0;
+        margin-left: 0;
+        margin: 0 auto !important;
+    }
+
+    header {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 70px;
+    }
+
+    .header-video video {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-text {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .header-text span {
+        border: none;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .header-text a {
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .header-text button {
+        letter-spacing: 0;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .discount {
+        width: 265px !important;
+        height: 340px !important;
+        margin-right: 15px !important;
+    }
+
+    .added {
+        width: 265px !important;
+        height: 340px !important;
+        margin-right: 15px !important;
+    }
+
+    footer {
+        display: block !important;
+        flex-direction: none !important;
+    }
+
+    footer .social-media {
+        gap: 0 !important;
+    }
+}
